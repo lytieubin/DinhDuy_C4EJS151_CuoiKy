@@ -1,0 +1,52 @@
+body {
+    margin-left: 35%;
+    padding-top: 100px;
+}
+.image-cell {
+    cursor: pointer;
+}
+.image {
+    user-select: none;
+}
+.game-board, .image-row {
+    display: flex;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+.game-board div, .image-row div {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.game-board div img, .image-row div img {
+    width: 50px;
+}
+.counter {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    background-color: red;
+    color: black;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 20px !important;
+    height: 20px !important;
+}
+.controls {
+    display: flex;
+    gap: 10px;
+}
+.controls button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.disabled {
+    background-color: #ccc !important;
+    pointer-events: none;
+}
